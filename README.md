@@ -1,5 +1,4 @@
-# StrathMarineCodeClub
-
+# StrathMarineCodeClub  :octopus: :whale: :ocean: :fishing_pole_and_fish: :desktop_computer:  :chart_with_upwards_trend:
 
 This is a log of what's been covered during the Thursday marine group code club. Each week a new and improved R script is uploaded into the `R scripts` directory. 
 
