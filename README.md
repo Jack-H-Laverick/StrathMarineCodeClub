@@ -18,10 +18,10 @@ You can use a programme to compare the differences from week to week, or look yo
 
 ### Coming up:
 
-- [] Functions
+- [ ] Functions
 
-- [] Primitives/Vectorisation
+- [ ] Primitives/Vectorisation
 
-- [] Code profiling
+- [ ] Code profiling
 
-- [] Your own R package
+- [ ] Your own R package
