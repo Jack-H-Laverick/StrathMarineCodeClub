@@ -5,7 +5,7 @@ This is a log of what's been covered during the Thursday marine group code club.
 You can use a programme to compare the differences from week to week, or look yourself. I'm planning on building a HTML walk through of what the changes were and why for each week, to host here as a gitpages site. 
 
 
-### Week 1 (18/02/22) Kicking off:
+### Week 1 (18/02/22) *Kicking off*:
 
 - [x] Introduction to "the script"
 
@@ -15,15 +15,15 @@ You can use a programme to compare the differences from week to week, or look yo
 
 - [x] Idiomatic naming 
 
-### Week 2 (25/02/22) Functional programming:
+### Week 2 (25/02/22) *Functional programming*:
 
-- [ ] R projects
+- [x] R projects
 
-- [ ] Swapping in existing functions
+- [x] Swapping in existing functions
 
-- [ ] Snippets and extracting functions
+- [x] Snippets and extracting functions
 
-- [ ] Making your functions general
+- [x] Making your functions general
 
 ### Coming up:
 
