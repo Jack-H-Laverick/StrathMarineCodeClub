@@ -25,14 +25,20 @@ You can use a programme to compare the differences from week to week, or look yo
 
 - [x] Making your functions general
 
-### Coming up:
+### Week 3 (04/03/22) *More functions!*:
 
-- [ ] Iterating code: or do you *need* a loop?
+- [ ] Adding warnings and errors
 
 - [ ] Primitives/Vectorisation
+
+- [ ] DRY code by abstracting to functions
+
+### Coming up:
+
+- [ ] Your own R package
+
+- [ ] Iterating code: or do you *need* a loop?
 
 - [ ] Parallelising code
 
 - [ ] Code profiling
-
-- [ ] Your own R package
