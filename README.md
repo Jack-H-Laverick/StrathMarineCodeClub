@@ -27,18 +27,26 @@ You can use a programme to compare the differences from week to week, or look yo
 
 ### Week 3 (04/03/22) *More functions!*:
 
-- [ ] Adding warnings and errors
+- [x] Adding warnings and errors
 
-- [ ] Primitives/Vectorisation
+- [x] Primitives/Vectorisation
 
-- [ ] DRY code by abstracting to functions
+- [x] DRY code by abstracting to functions
+
+### Week 4 (11/03/22) *Iterating code: or do you* need *a loop?*:
+
+- [ ] Loops
+
+- [ ] Vectorisation
+
+- [ ] The apply family
+
+- [ ] Welcome to the tidyverse (map)
 
 ### Coming up:
-
-- [ ] Your own R package
-
-- [ ] Iterating code: or do you *need* a loop?
 
 - [ ] Parallelising code
 
 - [ ] Code profiling
+
+- [ ] Your own R package
