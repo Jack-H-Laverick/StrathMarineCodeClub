@@ -33,20 +33,22 @@ You can use a programme to compare the differences from week to week, or look yo
 
 - [x] DRY code by abstracting to functions
 
-### Week 4 (11/03/22) *Iterating code: or do you* need *a loop?*:
+### Week 4 (18/03/22) *Iterating code: or do you* need *a loop?*:
 
-- [ ] Loops
+- [x] Loops
 
-- [ ] Vectorisation
+- [x] Vectorisation
 
-- [ ] The apply family
+- [x] The apply family
 
-- [ ] Welcome to the tidyverse (map)
+- [x] Welcome to the tidyverse (map)
 
-### Coming up:
+### Week 5 (25/03/22) *Making your code faster*:
 
 - [ ] Parallelising code
 
 - [ ] Code profiling
+
+### Coming up:
 
 - [ ] Your own R package
