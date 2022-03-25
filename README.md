@@ -45,10 +45,16 @@ You can use a programme to compare the differences from week to week, or look yo
 
 ### Week 5 (25/03/22) *Making your code faster*:
 
-- [ ] Parallelising code
+- [x] Parallelising code
 
-- [ ] Code profiling
+- [x] Code profiling
+
+### Week 6 (01/04/22) *Your own R package*:
+
+- [ ] Sourcing scripts
+
+- [ ] R package development
 
 ### Coming up:
 
-- [ ] Your own R package
+- [ ] Version control

@@ -1,5 +1,10 @@
 
-#--# Title: Sudoku solver, 11/03/2022
+#--# Title: Sudoku solver, 18/03/2022
+
+Puzzle <- as.matrix(read.csv("./Data/Sudoku.csv", header = F))                      # Import a Sudoku puzzle
+
+Many_puzzles <- list(Puzzle)                                      
+Many_puzzles <- Many_puzzles[rep(1, 10)]                                            # Create an example list of multiple puzzles
 
 #### My functions ####
 
@@ -20,7 +25,7 @@ Find_box <- function(row_or_column) {
   return(to_select)  
 }
 
-sudoku_solver <- function(Puzzle) {
+Sudoku_solver <- function(Puzzle) {
   
   while (anyNA(Puzzle)) {                                                             # Run while there a gaps to be filled                                                                                   
     
@@ -51,58 +56,17 @@ sudoku_solver <- function(Puzzle) {
 
 #### Solve Sudoku ####
 
-Puzzle <- as.matrix(read.csv("./Data/Sudoku.csv", header = F))                      # Import a Sudoku puzzle
+Solved_puzzle <- Sudoku_solver(Puzzle)                                              # Use our solver wrapped in a function
 
-while (anyNA(Puzzle)) {                                                             # Run while there a gaps to be filled                                                                                   
-  
-  for (row in 1:9) {                                                                # Work through the rows
+rowSums(Solved_puzzle)                                                              # Check whether all rows sum to the same value
+colSums(Solved_puzzle)                                                              # Check whether all columns sum to the same value
 
-    for (column in 1:9) {                                                           # and the columns
-    
-      if (is.na(Puzzle[row, column])) {                                             # Select a cell, Is the cell filled?
+#### Iterating over multiple puzzles ####
 
-      row.poss <- Find_possible_values(Puzzle[row,])                                # Find possible values for the cell in this row.
- 
-      col.poss <- Find_possible_values(Puzzle[,column])                             # Find possible values for the cell in this column.
+Many_solved <- lapply(Many_puzzles, Sudoku_solver)                                  # Using lapply (baseR)
 
-      box.poss <- Find_possible_values(Puzzle[Find_box(row), Find_box(column)])     # Find possible values for the cell in this box
-      
-      all.poss <- box.poss[box.poss %in% row.poss[row.poss %in% col.poss]]          # Find the possible values using all conditions
+Many_solved_map <- purrr::map(Many_puzzles, Sudoku_solver)                          # Using map (tidyverse)
 
-      if (length(all.poss) == 1 & !is.na(all.poss) ){                               # If there is only 1 possible value
-
-         Puzzle[row, column] <- all.poss                                            # Insert the number in the cell
-         print(c(row, column))                                                      # print position
-        }
-      }
-    }
-  }  
-}
-
-#### Sense checking solution ####
-
-rowSums(Puzzle)                                                                     # Check whether all rows sum to the same value
-colSums(Puzzle)                                                                     # Check whether all columns sum to the same value
-
-Pold <- as.matrix(read.csv("./Data/Sudoku.csv", header = F))                        # reimport the original puzzle
-
-#### Iterating over multiple puzzles with lapply ####
-
-Many_puzzles <- list(Puzzle)                                      
-Many_puzzles <- Many_puzzles[rep(1, 10)]                                            # Create an example list of multiple puzzles
-
-many_test <- lapply(Many_puzzles, sudoku_solver)                                    # Iterate
-
-#### Iterating over multiple puzzles with map ####
-
-library(tidyverse)
-
-many_test_map <- map(Many_puzzles, sudoku_solver)                                   # Iterate
-
-#### Iterating over multiple puzzles in parallel ####
-
-library(furrr)
-plan("multisession")                                                                # Define how your computer parallelises the data
-
-many_test_map <- future_map(Many_puzzles, sudoku_solver, .progress = TRUE)          # Iterate
+furrr::plan("multisession")                                                         # In parallel (using furrr)
+Many_solved_parallel <- furrr::future_map(Many_puzzles, Sudoku_solver)
 
