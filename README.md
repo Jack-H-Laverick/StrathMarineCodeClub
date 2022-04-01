@@ -51,10 +51,12 @@ You can use a programme to compare the differences from week to week, or look yo
 
 ### Week 6 (01/04/22) *Your own R package*:
 
-- [ ] Sourcing scripts
+- [x] Sourcing scripts
 
-- [ ] R package development
+- [x] R package development
 
-### Coming up:
+### Week 7 (08/04/22) *Version control*:
 
-- [ ] Version control
+- [ ] Git
+
+- [ ] Github
