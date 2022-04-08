@@ -57,6 +57,6 @@ You can use a programme to compare the differences from week to week, or look yo
 
 ### Week 7 (08/04/22) *Version control*:
 
-- [ ] Git
+- [x] Git
 
 - [ ] Github
