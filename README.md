@@ -2,7 +2,7 @@
 
 This is a log of what's been covered during the Thursday marine group code club. Each week a new and improved R script is uploaded into the `R scripts` directory. 
 
-You can use a programme to compare the differences from week to week, or look yourself. I'm planning on building a HTML walk through of what the changes were and why for each week, to host here as a gitpages site. 
+You can use a programme to compare the differences from week to week, or look yourself. I'm planning on building a HTML walk through of what the changes were and why for each week, to host here as a gitpages site (in progress!). 
 
 
 ### Week 1 (18/02/22) *Kicking off*:
