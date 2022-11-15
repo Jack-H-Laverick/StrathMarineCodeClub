@@ -1,0 +1,19 @@
+
+/* Animate Background*/
+@keyframes Gradient {
+  0%   { background-position: 0% 50%;   }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%;   }
+}
+
+.reveal-viewport {
+  background: linear-gradient(132deg, #0a1636, #070536, #2c9ad9, #070536, #070536);
+  background-size: 200% 200%;
+  animation: Gradient 30s ease infinite;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0px;
+}
